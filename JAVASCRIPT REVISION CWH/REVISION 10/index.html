@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: black;
+        color: white;
+        margin: 34px;
+        padding: 34px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let a = 6;
+      function fact(number) {
+        let array = Array.from(Array(number+1).keys())
+        console.log(array);
+        let c = array.slice(1,).reduce((a, b) => {
+          return a * b;
+        })
+
+        console.log(c);
+        
+      }
+      fact(a);
+    </script>
+  </body>
+</html>
